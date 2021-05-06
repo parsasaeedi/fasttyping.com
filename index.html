@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png">
+    <!-- <link rel="stylesheet" href="/static/index_style.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> -->
+    <!--<script src="/static/form.js"></script>-->
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo nav-side">
+            <!-- <img class="logo" src="Logo.png" alt="Logo"> -->
+            <a class="logo" href="/">SPEED<br>TYPING<br>.COM</a>
+        </div>
+        <div class="nav-buttons nav-side">
+            <a class="nav-item" href="/signup">SIGN UP</a>
+            <a class="nav-item" href="/login">LOG IN</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="sides">
+            <h1>Typing Test</h1>
+            <hr>
+            <h2 class="header anim-typewriter">Test and Increase your typing speed</h2>
+            <form action="/" method="post">
+                <div class="time-list">
+                    <div class="choice">
+                        <a class="time time-row">1:00 TEST</a
+                        ><button type="submit" name="start" class="start time-row" value="1">START</button>
+                    </div>
+                    <div class="choice">
+                        <a class="time time-row">3:00 TEST</a
+                        ><button type="submit" name="start" class="start time-row" value="3">START</button>
+                    </div>
+                    <div class="choice">
+                        <a class="time time-row">5:00 TEST</a
+                        ><button type="submit" name="start" class="start time-row" value="5">START</button>
+                    </div>
+                </div>
+            </form>
+<!--<a class="start time-row" href="/test5min">START</a>-->
+            <br>
+            <div class="fact">
+                <h3>Quote Of The Day</h3>
+                <p class="fact">{{ fact }}</p>
+            </div>
+        </div>
+
+        <div class="sides signup">
+            <h2 class="signuptitle">Sign up for an account to keep track of your progress and compete with your friends</h2>
+            <form action="/" name="signup" method="post" id="signup">
+                <input class="name textbox" type="text" name="first" id="first" placeholder="First name"
+                ><input class="name textbox" type="text" name="last" id="last" placeholder="Last name">
+                <input class="form textbox" type="email" name="email" id="email" placeholder="Email">
+                <input class="form textbox" type="password" name="password" id="password" placeholder="Password">
+                <input class="form textbox" type="password" name="confirmation" id="confirmation" onKeyup="checkform()" placeholder="Confirm Password">
+                <input class="form submit" type="button" id="signupButton" onclick="checkSignUp()" value="SIGN UP">
+
+                <h6 class="form-message" id=first_error>Please enter your first name</h6>
+                <h6 class="form-message" id=last_error>Please enter your last name</h6>
+                <h6 class="form-message" id=email_error>Please enter your email</h6>
+                <h6 class="form-message" id=password_error>Please enter a password</h6>
+                <h6 class="form-message" id=confirmation_error>Please confirm your password</h6>
+                <h6 class="form-message" id="match_error">Passwords don't match</h6>
+            </form>
+            <h5 class="other-options">Already have an account? <a class="link" href="/login">Log In</a></h5>
+            <h5 class="other-options">Forgot your password? <a class="link" href="/reset">Click Here</a></h5>
+        </div>
+    </main>
+
+</body>
+<script src="/static/form.js"></script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo nav-side">
+            <!-- <img class="logo" src="Logo.png" alt="Logo"> -->
+            <a class="logo" href="/dashboard">SPEED<br>TYPING<br>.COM</a>
+        </div>
+        <div class="nav-buttons nav-side">
+            <a class="">{{ firstname.upper() }} {{ lastname.upper() }}</a>
+            <a class="nav-item" href="/logout">LOG OUT</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="sides">
+            <h1>Typing Test</h1>
+            <hr>
+            <h2>Increase your typing speed</h2>
+            <div class="time-list" action="/test">
+                <div class="choice">
+                    <a class="time time-row">1:00 TEST</a
+                    ><a class="start time-row" href="/test1minLI">START</a>
+                </div>
+                <div class="choice">
+                    <a class="time time-row">3:00 TEST</a
+                    ><a class="start time-row" href="/test3minLI">START</a>
+                </div>
+                <div class="choice">
+                    <a class="time time-row">5:00 TEST</a
+                    ><a class="start time-row" href="/test5minLI">START</a>
+                </div>
+            </div>
+            
+            <br>
+            <div class="fact">
+                <h3>Fact Of The Day</h3>
+                <p>{{ fact }}</p>
+            </div>
+        </div>
+    
+        <div class="progress sides">
+            <h2>Progress</h2>
+            <ul>
+                <hr>
+                {% for test in history %}
+                    <li class="test_detail">
+                        <h3 class="date test_detail_item">{{ date }}</h3>
+                        <h3 class="speed test_detail_item">{{ speed }} WPM</h3>
+                    </li>
+                    <hr>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="test_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo nav-side">
+            <!-- <img class="logo" src="Logo.png" alt="Logo"> -->
+            <a class="logo" href="/">SPEED<br>TYPING<br>.COM</a>
+        </div>
+        <div class="nav-centre nav-side">
+            <idiv class="centre-item">
+                <a id="testLength">1</a> MINUTE TEST
+            </div>
+        </div>
+        <div class="nav-buttons nav-side">
+            <a class="nav-item" href="/signup">SIGN UP</a>
+            <a class="nav-item" href="/login">LOG IN</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container cantainer-input-timer part">
+            <h3 class="text-display">Your typing speed is <a class="wpm">{{ wpm }}</a> WPM.</h3>
+        </div>
+
+        <div class="afterresult part">
+            <a href="javascript:history.back()" class="afterresult part">return</a>
+            <a href="/" class="afterresult part">BACK TO TESTS</a>
+        </div>
+
+    </main>
+
+</body>
+</html>

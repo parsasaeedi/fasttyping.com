@@ -1,0 +1,159 @@
+body
+{
+    background-color: #1d1e22;
+    font-family: 'Oswald', sans-serif;
+    color: #d4d4dc;
+    font-weight: normal;
+    font-style: normal;
+    margin: 1.5em;
+}
+
+
+nav
+{
+    color: #787B85;
+    /* background-color: #393f4d; */
+}
+
+.nav-side
+{
+    display: inline-block;
+    text-align: center;
+}
+
+
+.centre-item
+{
+    text-align: center;
+
+  float: none;
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-buttons
+{
+    float: right;
+}
+
+.nav-item
+{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: medium;
+    text-decoration: none;
+    color: #787B85;
+}
+
+.nav-item:hover
+{
+    color: #feda6a;
+}
+
+/* .logo
+{
+    height: 4em;
+    width: auto;
+} */
+
+.logo
+{
+    color: #787B85;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.nav-logo
+{
+    border: #787B85 solid;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    line-height: 0.9;
+    float: left;
+}
+
+main
+{
+    font-size: larger;
+    margin: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin: 0;
+}
+
+
+.container
+{
+    background-color: #24262D;
+    padding: 2em;
+    border-radius: 1em;
+    width: 50em;
+    max-width: 80%;
+}
+
+.timer
+{
+    /* position: absolute; */
+    top: 25em;
+    right: auto;
+    text-align: center;
+}
+
+.text-display
+{
+    text-align: center;
+}
+
+.input
+{
+    /* background-color: transparent; */
+    /* color: #24262D; */
+    /* border: 2px solid #24262D; */
+    /* outline: none; */
+    /* width: 100%; */
+    height: 0.1em;
+    width: 0.1em;
+    /* margin: auto; */
+    resize: none;
+    /* padding: 0.5em 1em; */
+    /* font-size: 1em; */
+    /* border-radius: 1em; */
+
+    opacity: 0;
+}
+
+.cantainer-input-timer
+{
+    clear: both;
+    display: block;
+}
+
+.correct
+{
+    color: green
+}
+
+.incorrect
+{
+    color: #F78070;
+    /* text-decoration: underline; */
+    background-color: red;
+}
+
+.wpm
+{
+    color: #feda6a;
+}
+
+.part
+{
+    clear: both !important;
+    display: inline-block !important;
+}
